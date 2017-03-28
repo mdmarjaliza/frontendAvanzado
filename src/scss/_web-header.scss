@@ -1,0 +1,93 @@
+$web-header-background: $color-solid-grosgrain;
+$web-header-color: $color-white;
+
+.web-header {
+	top: 0px; left: 0px;
+	background-color: $web-header-background;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	z-index:1;
+	box-sizing: border-box;
+	@include if-is-tablet {
+		height: 80px;
+	}
+	.web-title {
+		color: $web-header-color;
+		font-family: $web-title-font-family;
+		font-size: $font-size-title-tablet;
+		@include if-is-tablet {
+			font-size: $font-size-title-tablet + 10px;
+			padding-left: 35px;
+		}
+	}
+	.menu {
+	    display: inline-block;
+	    cursor: pointer;
+	    padding-bottom: 9px;
+	    padding-left: 10px;
+	    .bar1, .bar2, .bar3 {
+	    	width: 25px;
+	    	height: 3px;
+	    	background-color: $color-white;
+	    	margin-top: 6px;
+	    	transition: 0.4s;
+		}
+		@include if-is-tablet {
+			display: none;
+		}
+	}
+	// Rotar primera barra
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	   	transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+	// Ocultar segunda barra
+	.change .bar2 {
+	   	opacity: 0;
+	}
+	// Rotar tercera barra
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	   	transform: rotate(45deg) translate(-8px, -8px) ;
+	}
+	.search-div {
+		display: flex;
+		flex-direction: row;
+		margin-top: 10px;
+		.search-label {
+			color: white;
+			margin-right: 12px;
+			margin-top: 6px;
+			font-family: $web-title-font-family; 
+			display: none;
+			align-self: center;
+			@include if-is-tablet {
+				display: inline;
+			}
+		}
+		.search-box{
+			margin-right: 10px;
+			display: none;
+			align-self: center;
+			@include if-is-tablet {
+				display: inline;
+			}
+			@include if-is-desktop {
+				margin-top: 15px;
+			}
+		}
+		.search-icon {
+			max-width: 27px;
+			max-height: 27px;
+			color: white;
+			margin-right: 25px;
+			align-self: center;
+			margin-bottom: 5px;
+		}
+	}
+}

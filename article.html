@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Web articulos</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="theme-color" content="#9ED6E1">
+	<link rel="stylesheet" type="text/css" href="dist/css/style.css">
+</head>
+<body>
+	<header class="web-header">
+		<div class="menu">
+	 		<div class="bar1"></div>
+	 		<div class="bar2"></div>
+	 		<div class="bar3"></div>
+		</div>
+		<h1 class="web-title">UrBLOG</h1>
+		<div class="search-div">
+			<label for="buscar" class="search-label">Buscar en la web</label>
+			<input id="buscar" class="search-box" type="search">
+			<span class="search-icon search-icon-w" alt="Buscar"></span>
+		</div>
+	</header>
+
+	<nav class="nav-bar ui-element">
+		<ul class="item-list">
+			<div class="nav-block block-one">
+			<li class="item"><a href="#">Política</a></li>
+			<li class="item"><a href="#">Economía</a></li>
+			<li class="item"><a href="#">Sociedad</a></li>
+			<li class="item"><a href="#">Deporte</a></li>
+			<li class="item"><a href="#">Cultura</a></li>
+			<li class="item"><a href="#">Ciencia</a></li>
+			<li class="item"><a href="#">Todo</a></li>
+			</div>
+			<div class="nav-block block-two">
+			<li class="item sign-up-in first"><a class="sign" href="">LOGIN</a></li>
+			<li class="item sign-up-in first"><a class="sign" href="">REGISTRATE</a></li>
+			</div>
+		</ul>
+	</nav>
+
+	<div id="comienzo" class="container">
+		<div class="art-container">
+				<article class="articulo" data-id="3">
+					<div class="author-container">
+						<img class="author-img" src="images/avatar2.png" alt="">
+						<div class="info-author">
+							<div>
+								<span class="author-name">Anónimo Anónimez</span>
+							</div>
+							<div>
+								<time class="timeago" datetime="2016-07-30T19:23:00">30 Julio 2016, 19:23</time>
+							</div>
+
+						</div>
+					</div>
+					<div class="visual-container detail">
+						<img class="visual" src="images/cachorro-642px.jpg" srcset="images/cachorro-214px.jpg 214w, images/cachorro-428px.jpg 428w, images/cachorro-642px.jpg 642w" alt="Imagen">
+					</div>
+					<div class="text-container">
+						<h2 class="art-headline">Título 3</h2>
+						<p class="art-text-extended">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ex, doloribus! Perspiciatis repellendus ad odit soluta voluptatem similique consequuntur, eveniet earum nisi qui consectetur totam officia voluptates perferendis voluptatibus aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deserunt atque sed dolores enim, at excepturi qui perferendis dicta rerum, vitae repudiandae cum eius sit culpa modi, eveniet consequatur est! <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit. <br><br>Doloremque odio ad, earum rerum cumque, assumenda, magnam architecto doloribus consequuntur optio, iste aperiam dolorem sequi amet harum. Incidunt delectus non libero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi et magnam, commodi? Itaque, voluptatem, at <em>optio facilis saepe expedita</em>, voluptatibus quisquam illo cumque aperiam fugiat! Minus facere, dolores quod quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae impedit modi iure illo consectetur aliquam ea aliquid molestiae reprehenderit, eaque maiores laudantium asperiores aperiam ullam explicabo ex consequatur, harum cum.<br><br>
+						Ex modi placeat, fugiat saepe cupiditate maxime tempore dolore libero, deleniti ipsam minus eius dicta, voluptatibus impedit. Ab culpa iste maxime, dolorem reprehenderit nemo! Eius id aperiam tempora quia nostrum.<br><br>
+						Expedita, fugiat <a href="#">beatae distinctio labore</a>, vitae eum suscipit. Eligendi enim soluta odit libero, earum est incidunt consequuntur ab atque rerum eum adipisci dignissimos ratione quas eaque! Ducimus, similique consequatur ullam.</p>
+					</div>
+					<div class="foot-article">
+						<span class="like-icon like-50" alt="Me gusta"></span>
+						<a class="link-comentarios" href="#"></a>
+					</div>
+				</article>
+		</div>
+	</div>
+	<section id="comments-area" class="comments-list">
+		<div class="comment-zone-title"></div>
+		<div class="comments-div">
+		</div>
+	</section>
+	<form class="comments-form" novalidate>
+		<div class="campos-form" >
+			<div class="datos-personales">
+				<div>
+					<label for="name">Nombre</label>
+					<input type="text" id="name" name="name" placeholder="Nombre" required>
+				</div>
+
+				<div>
+					<label for="apellidos">Apellidos</label>
+					<input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+				</div>
+
+				<div>
+					<label for="mail">Correo electrónico</label>
+					<input type="email" id="mail" name="mail" required>
+				</div>
+			</div>
+
+			<div class="texto-comentario">
+				<div>
+					<label for="comment">Comentario</label>
+					<textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
+				</div>
+				<div class="aviso-txtarea">
+					<span id="aviso">¡Has superado el límite de 120 palabras!</span>
+				</div>
+			</div>
+		</div>
+		<button>Enviar comentario</button>
+	</form>
+	<footer class="footer">
+		<p>UrBLOG &copy; 2016 KeepCoding.io</p>
+		<a href="#comienzo">Volver al comienzo</a>
+	</footer>
+	<script src="dist/js/app.js"></script>
+</body>
+</html>

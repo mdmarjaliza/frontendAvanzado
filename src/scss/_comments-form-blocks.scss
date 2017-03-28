@@ -1,0 +1,38 @@
+.campos-form{
+	@include if-is-tablet {
+		display:flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+	}
+	@include if-is-desktop {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	.datos-personales{
+		@include if-is-tablet {
+			width: 45%;
+		}
+		@include if-is-desktop {
+			width: 220px;
+		}
+	}
+	.texto-comentario{
+		@include if-is-tablet {
+			width: 45%;
+		}
+		@include if-is-desktop {
+			width: 320px;
+			padding-left: 70px;
+			padding-right: 40px;
+		}
+		.aviso-txtarea {
+			width: 100%;
+			span {
+				display: none;
+			}
+		}
+	}
+}

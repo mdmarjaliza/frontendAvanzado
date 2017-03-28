@@ -1,0 +1,83 @@
+body {
+	background: $body-background-color;
+	color: $main-text-color;
+	font-family: $main-font-family;
+	font-size: $font-size-base;
+	padding-top: 60px;
+	overflow-x: hidden;
+}
+
+// Imagenes responsive
+img, embed, object, video {
+	max-width: 100%;
+}
+
+
+h2 {
+	font-size: $font-size-h2;
+	font-weight: bold;
+}
+
+form {
+	padding-left: 10px;
+	padding-top: 15px;
+	@include if-is-tablet {
+		height: auto;
+		position: relative;
+		flex-flow: row wrap;
+		div {
+			width: calc(50% - 10px);
+			margin: auto 5px;
+		}
+		button {
+			width: 20%;
+		}
+	}
+}
+
+label {
+	color: $color-solid-grosgrain;
+}
+
+input, textarea {
+	border: 1px solid $color-cancer;
+	margin: 5px 0px 15px 0px;
+	padding: 5px;
+	font-size: $font-size-base;
+	border-radius: 5px;
+	&:focus {
+		outline-color: $color-cancer;
+		background: lighten($color-solid-grosgrain, 70%);
+	}
+}
+
+label, input, button {
+	display: block;
+	box-sizing: border-box;
+}
+
+button {
+	border: 1px solid $color-cancer;
+	margin: 15px auto 15px auto;
+	max-width: 100%;
+	padding: 10px;
+	font-size: $font-size-base;
+	border-radius: 5px;
+	cursor: pointer;
+	&:focus {
+		outline-color: $color-cancer;
+		background: $color-grey;
+	}
+	background: $color-cancer;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: darken($color-cancer, 50%);
+	transition: all 0.25s;
+	&:hover {
+		background: darken($color-cancer, 10%);
+	}
+	&:active {
+		background: darken($color-cancer, 20%);
+		color: $color-white;
+	}
+}

@@ -1,0 +1,42 @@
+$web-title-font-family: 'Secular One', sans-serif;
+$main-font-family: 'Alegreya', serif;
+$titles-font-family: $main-font-family;
+$body-font-family: $main-font-family;
+
+// Font sizes
+$font-size-base: 17px;
+$font-size-small: $font-size-base - 3px;
+$font-size-large: $font-size-base + 3px;
+$font-size-title-tablet: $font-size-base + 18px;
+$font-size-h1: $font-size-base + 15px;
+$font-size-h2: $font-size-base + 12px;
+$font-size-h3: $font-size-base + 9px;
+$font-size-h4: $font-size-base + 6px;
+$font-size-h5: $font-size-base + 3px;
+$font-size-h6: $font-size-base;
+
+//Line height
+$line-height: 1.5;
+
+//Lines to show
+$lines-to-show: 4;
+
+// Base colors
+$color-white: #fff;
+$color-black: #333;
+$color-grey: #EBEDEA;
+$color-syntactic: #3D0F15;
+$color-cancer: #9ED6E1;
+$color-dental: #E8E7DC;
+$color-solid-grosgrain: #453221;
+$color-breeze: #131422;
+
+
+//Components colors
+$main-text-color: $color-black;
+$body-background-color: $color-dental;
+
+// Responsive variables
+$desktop-width: 1025px;
+$tablet-width: 737px;
+$phone-width: $tablet-width - 1px;

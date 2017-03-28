@@ -1,0 +1,48 @@
+.comments-list{
+	padding: 0 10px;
+	padding-bottom: 30px;
+	margin-top: 55px;
+
+	@include if-is-tablet {
+		padding: 0 100px;
+		padding-bottom: 30px;
+		margin-top: 55px;
+	}
+	@include if-is-desktop{
+		padding: 0 330px;
+		padding-bottom: 100px;
+		margin-top: 95px;
+	}
+	.comment-zone-title {
+		text-align: left;
+		padding: 10px 0;
+		padding-left: 20px;
+		font-family: $web-title-font-family;
+		font-weight: bold;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		background-color: rgba(69, 50, 33, .1);
+		color: $color-breeze;
+	}
+	.comment {
+		border: 1px solid darken($color-cancer, 20%);
+		padding: 15px 40px 25px 40px;
+		margin-top: 15px;
+		background-color: lighten($color-cancer, 15%);
+		border-radius: 25px;
+
+		.comment-user {
+			padding: 5px 0px;
+			color: lighten($color-syntactic, 12%);
+			display: inline-block;
+			white-space: nowrap;
+          	text-overflow: ellipsis;
+			overflow: hidden;
+			padding-right: 20px;
+		}
+
+		.comment-text {
+			text-indent: justify;
+		}
+	}
+}

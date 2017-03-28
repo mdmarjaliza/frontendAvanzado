@@ -1,0 +1,11 @@
+body {
+	.ui-element {
+		@include if-is-phone {
+			display: none;
+		}
+	}
+}
+
+
+
+
